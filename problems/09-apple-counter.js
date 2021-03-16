@@ -29,7 +29,12 @@ appleCounter(obj3); // => 3
 ***********************************************************************/
 
 function appleCounter(appleObj) {
-  // your code here
+  let counter = 0;
+  if (Object.keys(appleObj).includes('apple') !== undefined) {
+    counter += 1;
+  }
+
+  return counter;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
