@@ -20,8 +20,15 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // your code here
-}
+  let keyFound = false;
+  objArray.forEach(function (obj) {
+    if (obj[keyString] !== undefined) {
+      keyFound = true;
+    }
+
+  })
+  return keyFound;
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keyInObjectArray;
